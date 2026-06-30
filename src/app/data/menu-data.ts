@@ -6,7 +6,6 @@ import {
   Martini,
   UtensilsCrossed,
   CakeSlice,
-  Soup,
   type LucideIcon,
 } from "lucide-react"
 

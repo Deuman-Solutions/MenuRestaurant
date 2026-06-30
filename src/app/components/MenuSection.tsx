@@ -1,17 +1,18 @@
 import { MenuItemCard } from "@/app/components/MenuItemCard"
-import type { MenuCategory } from "@/app/data/menu-data"
+import type { MenuCategory, MenuItem } from "@/app/data/menu-data"
 
 interface MenuSectionProps {
   category: MenuCategory
+  onSelectItem: (item: MenuItem) => void
 }
 
-export function MenuSection({ category }: MenuSectionProps) {
+export function MenuSection({ category, onSelectItem }: MenuSectionProps) {
   const Icon = category.icon
 
   const grid = (
     <div className="menu-grid">
       {category.items.map((item) => (
-        <MenuItemCard key={item.id} item={item} />
+        <MenuItemCard key={item.id} item={item} onSelect={onSelectItem} />
       ))}
     </div>
   )
