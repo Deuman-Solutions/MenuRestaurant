@@ -49,7 +49,7 @@ function App() {
             />
           </section>
 
-          <section className="p-5 pt-0 md:p-10 md:pt-0" data-purpose="menu-listing">
+          <section className="p-5 max-md:px-1 pt-0 md:p-10 md:pt-0" data-purpose="menu-listing">
             {isLoading && (
               <p className="text-sm text-muted-foreground text-center py-12">
                 Cargando el menú...
