@@ -18,7 +18,7 @@ export function MenuItemCard({ item, onSelect }: MenuItemCardProps) {
         <p className="text-[10px] text-muted-foreground mt-1 leading-tight line-clamp-3">{item.description}</p>
         <p className="font-bold text-xs mt-3">{formatPrice(item.price)}</p>
       </div>
-      <div className="w-32 bg-muted shrink-0">
+      <div className="w-32 max-md:w-28 bg-muted shrink-0">
         <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
       </div>
     </button>
