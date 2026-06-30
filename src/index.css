@@ -128,3 +128,37 @@
     @apply font-sans;
     }
 }
+
+/* Styles ported from menu-restaurant.html, used by the Header, CategoryNav
+   and MenuSection components in src/app/components */
+@layer utilities {
+  /* Hero banner: background image/gradient is set inline by Header.tsx,
+     sizing and layout live here */
+  .hero-banner {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+
+  /* Hides the scrollbar on the horizontal category navigation while
+     keeping it scrollable */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Responsive 2-column grid used to lay out menu items */
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    .menu-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
