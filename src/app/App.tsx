@@ -30,60 +30,58 @@ function App() {
 
   return (
     <>
-      {/* Fixed category bar, always pinned to the top of the viewport */}
-      <CategoryNav
-        categories={categories}
-        activeCategory={activeCategory}
-        onSelect={setSelectedCategory}
-      />
+      <Header />
 
-      {/* Offsets the page content by the height of the fixed nav above */}
-      <div className="pt-16">
-        <Header />
+      <main className="relative -mt-32 md:-mt-40 px-4 pb-12 max-w-5xl mx-auto z-20">
+        <div
+          className="bg-card rounded-3xl shadow-2xl overflow-hidden min-h-[600px]"
+          data-purpose="menu-card"
+        >
+          <section className="p-8 md:p-10 pb-4" data-purpose="search-section">
+            <SearchBar value={searchTerm} onChange={setSearchTerm} isSearching={isSearching} />
 
-        <main className="relative -mt-32 md:-mt-40 px-4 pb-12 max-w-5xl mx-auto z-20">
-          <div
-            className="bg-card rounded-3xl shadow-2xl overflow-hidden min-h-[600px]"
-            data-purpose="menu-card"
-          >
-            <section className="p-8 md:p-10 pb-4" data-purpose="search-section">
-              <SearchBar value={searchTerm} onChange={setSearchTerm} isSearching={isSearching} />
-            </section>
+            {/* Stays in place below the search bar; pins itself to the top
+                of the viewport once scrolled past, see CategoryNav.tsx */}
+            <CategoryNav
+              categories={categories}
+              activeCategory={activeCategory}
+              onSelect={setSelectedCategory}
+            />
+          </section>
 
-            <section className="p-8 md:p-10 pt-0" data-purpose="menu-listing">
-              {isLoading && (
-                <p className="text-sm text-muted-foreground text-center py-12">
-                  Cargando el menú...
-                </p>
-              )}
+          <section className="p-8 md:p-10 pt-0" data-purpose="menu-listing">
+            {isLoading && (
+              <p className="text-sm text-muted-foreground text-center py-12">
+                Cargando el menú...
+              </p>
+            )}
 
-              {isError && (
-                <p className="text-sm text-destructive text-center py-12">
-                  No pudimos cargar el menú. Intenta nuevamente más tarde.
-                </p>
-              )}
+            {isError && (
+              <p className="text-sm text-destructive text-center py-12">
+                No pudimos cargar el menú. Intenta nuevamente más tarde.
+              </p>
+            )}
 
-              {!isLoading && !isError && filteredCategories.length === 0 && (
-                <p className="text-sm text-muted-foreground text-center py-12">
-                  No encontramos productos para &quot;{searchTerm}&quot;.
-                </p>
-              )}
+            {!isLoading && !isError && filteredCategories.length === 0 && (
+              <p className="text-sm text-muted-foreground text-center py-12">
+                No encontramos productos para &quot;{searchTerm}&quot;.
+              </p>
+            )}
 
-              {!isLoading &&
-                !isError &&
-                filteredCategories.map((category) => (
-                  <MenuSection
-                    key={category.id}
-                    category={category}
-                    onSelectItem={setSelectedItem}
-                  />
-                ))}
-            </section>
-          </div>
+            {!isLoading &&
+              !isError &&
+              filteredCategories.map((category) => (
+                <MenuSection
+                  key={category.id}
+                  category={category}
+                  onSelectItem={setSelectedItem}
+                />
+              ))}
+          </section>
+        </div>
 
-          <Footer />
-        </main>
-      </div>
+        <Footer />
+      </main>
 
       <ScrollToTopButton />
 

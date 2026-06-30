@@ -15,7 +15,7 @@ export function Header() {
           <img
             src={RESTAURANT_INFO.logoUrl}
             alt={`Logo ${RESTAURANT_INFO.name}`}
-            className="w-16 h-16 object-contain"
+            className="w-40 h-40 object-cover"
           />
         </div>
         <h1 className="text-white text-2xl md:text-4xl font-bold tracking-tight uppercase">

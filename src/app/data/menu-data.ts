@@ -34,13 +34,13 @@ export interface MenuCategory {
 }
 
 export const RESTAURANT_INFO = {
-  name: "Lancelot Barrio Italia",
+  name: "Menu Restaurant",
   logoUrl:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuAIfeFZ7bBYVCm65LAiryD1w453IZ-akVlNjEQ2X9RRlAXQW-7xHCUM6laCxBgFrn7P36weS9u7lEElgM7mtL4fZDXacqDWbI-ndmBSfLYit9FDPQiBCHjQnSAfEAAOgQQvxLn6uhHiLTZgYlLfZbimCwU9xfz-ZVcOyi9U2WY2PX9NvlDQcGXg2841Gzq5Ks0BRK5TTil-qe10t6R1d-DyDJXtwm9Px16hhLKu260X4RpPX5srfcY1UE9hGtZd1R6wNufJzHNv_g",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQC14ypHGCFsbS8HmcvC50EqddVwVXDr-EHUXYdnnfOw&s=10",
   bannerUrl:
     "https://lh3.googleusercontent.com/aida/AP1WRLvPbDHSmLPJnyW7NSnQ8YMufzA8nT9wxK6_a8-kvQ7S-2iR8geIZOJaPqkG7KuUy5sMaxbpJVt8kOepfreMTsyHxApM2CzmTcxDkINbQra1lr8SURdJTOvo1aHmhwthfBCjQELzrCl9jwXq1zEDwTyCDgiYEv2EeFXARnOKD3-pYx-NQKeS_RH9481EitWxWLOYEr_py05xm8xjcfhDuT8Xf5Bl2INRl9dYRty0q3HqWqHxZeiG2P97",
   schedule: "De Lunes a Domingos: 13:00 a 22:00",
-  footerCredit: "FUDO",
+  footerCredit: "Deuman Solutions",
 } as const
 
 export const MENU_CATEGORIES: MenuCategory[] = [
@@ -52,42 +52,33 @@ export const MENU_CATEGORIES: MenuCategory[] = [
     items: [
       {
         id: "lady-rubi",
-        name: "🌹LADY RUBI 🌹✨ (Matcha)",
+        name: "🌹 Matcha Rubi 🌹",
         description:
           "Inspirado en hechizos de amor y valentía. Cada sorbo despierta el corazón y el alma. / MATCHA, FRAMBUESA, LECHE & POLVO DE ESTRELLAS 💍",
         price: 5990,
         accentClassName: "text-red-600",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuBtjkq_bzrFmgl_WzuiZNJLJOJ1cBWQPzu3HKEsBcQuIXgTiO__2XgUjnb2fMu3_5xZjK-EGzfdSc5VAc-7VGYzOOJJqSppMObPCzdTey3x6k_OrDBbsCdGTgwwEGq6GS0tgt0_2XU-xBfX5996ay8T4J90dpVF8DzkR8bfbgN1JkU4Cm8a4jRYj6ZsEpweNOMo3dJqiUy3Ohx3X-uxHsTtjt-2BHPSrgdR9o9Lv4xh92FH5P3uqW4YBd2IV74NwTTiY3yM15e0Bg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHwV0czHpUfn1MH07HZigtzrF0-IC4fSCxJPX8lFytiI4qngCcK-Qp4BXO&s=10",
       },
       {
         id: "lady-esmeralda",
-        name: "🌿LADY ESMERALDA 🌿✨ (Matcha)",
+        name: "🌿 Matcha Esmaralda 🌿",
         description:
           "Inspirada en la sabiduría del bosque. Te conecta con la naturaleza y su energía ancestral. / MATCHA, MANGO, LECHE & POLVO DE ESTRELLAS 🧚‍♀️",
         price: 5990,
         accentClassName: "text-green-600",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuALX9dGuFe2aqsCY0QwZuBum6O8zHZnjktCuV6D_1iWlJv-9sAEZGijqTaIAOvqKzb4QeLnmpl4BvQ-tu2AV6YPZnekwBoRLCzYZKCK9z6Qk_JHkM9F3hBnUlRJx_qssTcfSn4Ix3M3u0T4P6YwQVwOxUktetevBU5m8NVb_nv9H3rUQ_lDC4I98lJpM7KL91a2Jp075uWl6acOk18CIrvZFUJIf8XbaT020U1AoiGBF4l5I-shrApRVXcIWVVPWrGtUFLDOyHIOA",
+          "https://images.aws.nestle.recipes/original/2024_10_28T11_34_29_badun_images.badun.es_te_matcha_con_leche_condensada_7c8c.jpg",
       },
       {
         id: "infusiones",
         name: "🍵 INFUSIONES 🍵",
         description:
-          "🌿 Infusión Tropical: Peach Mango con Té Negro 🍑🥭 ... 🍊✨ Infusión de Té Verde Menta ... 🌱🌿 ... ámbar con notas cítricas de limón - maracuyá y...",
+          "🌿 Infusión Tropical: Peach Mango con Té Negro 🍑🥭 ... 🍊✨ Infusión de Té Verde Menta ... 🌱🌿 ... ámbar con notas cítricas de limón - maracuyá y naranja",
         price: 3990,
         accentClassName: "text-orange-600",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuBB8NtcfE17P3svJSdYoZvApSop25_1YZ00bGUagAh4L1grbdP_wjrDLymUe8KAgedQWl2O-n-QjFAwWlr1A07KrltUIcaIOgU_npxZyxp2M0CvbeNCJ0yRWGuMfM_J29uFpxB6G53L9Gzxoocl3CXxdP827Y9sZEhVsZtr6PGEEsedeCyydEZJlxWFRRyoFj8SiVO_tKIP21CrCtZd6qxk2E7c6FU_wBPbzZa5tFIjtk42o2Jb04FbzYMxyiwSWMxjT7u0E9nAKA",
-      },
-      {
-        id: "huevos-de-dragon",
-        name: "HUEVOS DE DRAGÓN 🥚🐉",
-        description:
-          "Crujientes por fuera y rebosantes de noble queso gouda fundido en su interior. Servidas con una poderosa salsa cheddar y coronadas con crujiente...",
-        price: 7990,
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD6pZQS1KwppQuCzfV1Rq0e1qe9HRMbD9dGwNWBD63--vtGMkif6viJ0mpuITdQyVgDDRj3qMLjpsj7rheJANiV5CDHHn6b68Fe_EHvBC6sGupPf2_mTaEYM6_xPLUMWzsK3G-RF_Z29ZTnfTyHVEmm5Nvc8rmU0sLLg_GBVFkFtm0qqCPk3VkbUy5lM8hIdvTynW81xl5tLzdMn8NQYSxrbRJ81S9VcMORtSPFdVuJRnU2Vrw9abkF2dbBPBs5xrobK3lpH4pX-g",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgRPOJHnTdvu95-ZVOoY0Q6XdRp4PqTi_Y7nS8L4c3ounmMshFfk-L_EC0&s=10",
       },
     ],
   },
@@ -98,12 +89,12 @@ export const MENU_CATEGORIES: MenuCategory[] = [
     items: [
       {
         id: "cafe-helado",
-        name: "CAFÉ HELADO",
+        name: "CAFE HELADO",
         description:
           "Café oscuro de carácter legendario, 3 bolas de helado de vainilla, leche, sabor caramelo, salsa de chocolate, suave chantilly y cacao en polvo...",
         price: 6990,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDL2Y5ey4dKxA1L373oovsLxSk0HeJcapuFfsS--KdB_kG2tPfdjHjP8jix7e88w5aeb9n9QVTPIpEtda9Si--ywFeQ_5XLAHmMyZ-PQXDKLEsgwYZmVqnwF37-JaCzGAJyYXHjWidHxjqI0yMMyQFitWoBZQS8dbPZdxL8sZKNllIkEvmHoXr7EurfFDz1U7l1o7EVmfxr2OveQWNn4KOqvPuW9hf1gj2pmtnrY_TzWRsNAhkHD-G2SBVM_IwF1YfumEEyT11JJA",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-rAP5U8ffx_6G-1Yz8qHJrsaH7PjyEygKa91mu9GH5nsrZ3Qck0FnhF6&s=10",
       },
       {
         id: "brownie-con-helado",
@@ -125,43 +116,43 @@ export const MENU_CATEGORIES: MenuCategory[] = [
         id: "bruma-encantada",
         name: "✨BRUMA ENCANTADA✨ (Affogato)",
         description:
-          "Un baile de nieve, frío y sedoso, bañado con un intenso shot de café caliente, que baja como una suave bruma mágica que despierta sabores y...",
+          "Un baile de nieve, frío y sedoso, bañado con un intenso shot de café caliente, que baja como una suave bruma mágica que despierta sabores y emociones.",
         price: 5990,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDP-bqV0sfW-7rrsC2Rl5WCId1bNQdk9UnCw0oO9yuDAuvBP84j_Umk19bbYP3xcvul0fEWU38j_RqMJCmyOMpugGgufTfDVS6FPB7DxW7RFTovNzuWY30Ay_gazesIRCFiOsjhTnltGgJUcKFcF70xJW-SQh4-WGloemfRi7SfoNvJbmb4d8Rfc5UO6WB5kl1NYsqwespB9ladJEpot1ev5OEBAgv1_F_4QQV9Ar5wdb9h92JzttNZqFNKNBM_LLA4rw_70PtZeg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQ0DR8xWQcJp-1-Bxvx4AYOECp8IpRz8zHkLqW9avHJnRaXlWQT1yecM&s=10",
       },
       {
         id: "frappuccino-moka",
         name: "❄️ FRAPPUCCINO MOKA ❄️",
         description:
-          "Café helado, oscuro y noble, sellado por el hielo como un pacto antiguo. Despierta al guerrero, enfría el alma y susurra una verdad eterna: vencer la...",
+          "Café helado, oscuro y noble, sellado por el hielo como un pacto antiguo. Despierta al guerrero, enfría el alma y susurra una verdad eterna: vencer la sed con sabor a chocolate y café.",
         price: 5990,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD6lG81QBJ0Spz2lv6VT6eiTBEPuRIPSm93cFTs5AwskBHsCviz3LMNBx41VpMFCxF39Jbdmc_9LGkeWet6Z8nznYaaMoEk0lY9ULuJ9XLmoDRURPC8pVZlRoZJQ0oJtpIGlpZz49iPTIqAwSSRKHW1szkz2RkdeIZsse8SQg3xUtNz2QwoOAnFovM7rLFSPN4-ahahOJ3KVcY1lMjlyWC75MSyIaDyJ7XX32OgRdKEK-PRJxCfBfI2e4p69_gBZiNVegpdoyW-Zw",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsQFBUxfIM44z10xXizwYi2gQJ-SOMz0FfzOfYMj_eofWS8JTeSDO84_l&s=10",
       },
     ],
   },
   {
     id: "hamburguesas",
     label: "Hamburguesas Premium",
-    navLabel: "Happy Burger Brave",
+    navLabel: "Happy Burger",
     icon: Sandwich,
     items: [
       {
-        id: "sir-lancelot",
-        name: "SIR LANCELOT + PAPAS",
+        id: "giga-hamburguesa",
+        name: "GIGA HAMBURGUESA + PAPAS",
         description:
           "Doble hamburguesa de vacuno, pan tipo brioche, tocino, queso gouda, salsa ciboulette, cebollas caramelizadas en salsa BBQ y papas rústicas...",
         price: 10990,
         accentClassName: "text-amber-800",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD0TN0ivwZS7sBuTkxDDIbs_X99_KcBtBbItSmAqEi7ppBGKenRucvvT6kRefB6o05zClRqIUWE5fCxz2NjjXkDN2Vg8u_6H6EKRicBrnZHD4sslEePyndeEzODihLNKWUoqAKD2OEb1Iv0wwxVzxGNqoAAO1vUoJ4Q0G9PDdaSxTtuYKUkAgW3r8WZRn6JtuM9W8PBKkXthxHDLfY1KJXOaBQCJwDTl4-D7WTGrD9mrLIgGF4ktkDezpWqRBV1b9eW1MakqLQcSw",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlLHc-YovMNxy3MI5yFXs8VJ-57czGQ2oMQSIyPlz76HR_ajBZ-Z5Hh2I&s=10",
       },
       {
         id: "sir-pickles",
         name: "SIR PICKLES + PAPAS",
         description:
-          "Doble hamburguesa de vacuno, pan tipo brioche, láminas de queso cheddar, tocino, lechuga, aros de cebolla morada, pepinillos rebanados, ají verde y...",
+          "Doble hamburguesa de vacuno, pan tipo brioche, láminas de queso cheddar, tocino, lechuga, aros de cebolla morada, pepinillos rebanados, ají verde y salsa BBQ, acompañado de papas rústicas.",
         price: 10990,
         accentClassName: "text-amber-800",
         image:
@@ -182,46 +173,46 @@ export const MENU_CATEGORIES: MenuCategory[] = [
     icon: Martini,
     items: [
       {
-        id: "caldero-de-brujas",
-        name: "✨🔮 CALDERO DE BRUJAS 🔮✨",
+        id: "blue-lagoon",
+        name: "✨BLUE LAGOON✨",
         description:
-          "Las Brujas invadieron el castillo y han creado una poción para hechizarnos a todos / Ponche de frutas tropicales, mix de berries macerados, jugo de...",
+          "El mismo azul eléctrico y refrescante, totalmente libre de alcohol. Una base cítrica de limonada natural y notas aromáticas de sirope azul de naranja. Divertido, ligero y burbujeante.",
         price: 6990,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAI7TvTK8tu0BFoKI7gMM6wcGnlLClZMwaW8aSdTiijDHBD3xrFfmmE2oZPTs1rOoRQNI9O7wCympWRGGLIYxzGDzOuw_5ELEFvf9QszjwlfzlIebRlJGmNvf3mW_VVH3Z46EoNUNojPs1BpMwrzscuZdLgs8C8H-gdmiDlUfn_86nCF6IM4KGSFddcMFZqoVxyVgzJ33-ydNYdUtB6mDZaGQhY17-isQYocTolOvmTOWGVJdu6PsCmp26Vt304OYX7JE_WYtbZDQ",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJwDewTrjCW0pX-lOjwLC2cN6PCQ8wdBBfibHBeM-5W0lkan1AzHUYpVE&s=10",
       },
       {
-        id: "botin-de-guerra",
-        name: "BOTÍN DE GUERRA 💰🏴‍☠️",
+        id: "mimosa",
+        name: "MIMOSA",
         description:
-          '"Una batalla ganada, un botín de guerra robado. Largo vida al Rey" 👑 Mocktail a base de mojito de maracuyá, ginger ale y pulpa de frambuesa (P...',
+          'Todo el glamour del clásico cóctel, completamente libre de alcohol. Zumo de naranja fresco seleccionado combinado con un toque efervescente y notas botánicas ligeras.',
         price: 5990,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuBPIZsJI5DESTMJLWGOPS5m9MTv63oZtelcp2GdRRdN2zZkhSaiOVS04pIGDqvElULLmV_yuEMtFeKofsOFDNTsoxHyS92NihkST6F1fRNXL4y-XVSqw91BBPHfIo6vQrmqCnwibBfMFWiJBvzJnr8qkktte-9pt0UL4cw8pWT39kT3YwqLQPtjWoLIAbpn9DUc_3TxOcNFVcs3WdX3wUuhyGabeNV_0CDLg8w3XF-Wpi6FEkcjE50OztoFQr02kaQ4ROYJFghNgA",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjOJWoEbJwe2O-lAb-oXuEAdpbkLosBCXPD5FEuyiyeIek-uIu6Tfyuu0&s=10",
       },
     ],
   },
   {
-    id: "grandes-platos",
-    label: "Grandes Platos",
+    id: "pizza",
+    label: "Pizza",
     icon: UtensilsCrossed,
     items: [
       {
-        id: "lancelot-baby-ribs",
-        name: "LANCELOT BABY RIBS (ENSALADA + PAPAS)",
+        id: "pizza-española",
+        name: "PIZZA ESPAÑOLA",
         description:
-          "Pieza half de costillita de cerdo en salsa BBQ con semillas de sésamo y ciboulette, papas fritas rústicas y ensalada césar.",
+          "Salsa de tomate, mozzarella, chorizo español, pimientos asados y aceitunas. Intensa, sabrosa y tradicional.",
         price: 15990,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuCeoChipPKfBgpqRMriHvcCWzLD4jp381hRYptmAuwObOK3dIXF_3YyV3svkl9vWjG7uslY__p6MakT_cx00DUVxdqUaQBWX_NnHglZjS5215NQgYlwqJgspfCIdzjP7QD7V0wwPVJCTyA_8JRs2DpwJXHDEqWjr81w30-uUos_hXaIBhXBoqyR-M2az0NPUz5dc2SBvrZrXlmt7v8uB8Xis19-EMCHBeN9kcr2KvOL5bur3rU8JGLLcBC4HQvwuwzQ0jL1YdQGhQ",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkv7fnOMdbjA2hYELIrGvc7sPDu130_dnHQFQV7a_Tt2Q1ZMhOLJdtyBY&s=10",
       },
       {
-        id: "la-parmesana",
-        name: "LA PARMESANA",
-        description: "Milanesa de pollo a la parmesana, ensalada césar y papas fritas.",
+        id: "pizza-italiana",
+        name: "PIZZA ITALIANA",
+        description: "Salsa de tomate, mozzarella fior di latte, albahaca fresca y aceite de oliva. Sencilla, fresca y clásica.",
         price: 11990,
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuBTW_5fSkp16E1VU1mgxMPla8KYIRzgi3VItoM6sL3Vvua50fIlow7ZJia4gSK-ooSG07bj0gJBVXUpuAzcz-RyBR7j9yo1eye5LOLejZ0BtQM-TXh_tEuf9PGv93IBvRX7GsLCuJeL4ynGigEQqLItufgfJyv44vTPceVNr5iudA0U_CWTWSt3nM3k_tsYn1aNgC3n515lPVCAzJ3JnMQDyI8iIY6ZFPfSTrPkuOgaYnQWWaPE_i28QViXAchmZoBo85H12Clojg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGACociwatlDl-gEQPD90iRtSaFI_ikRf2EWtMYsp_2SUMQ6_ZcM2v8fM&s=10",
       },
     ],
   },
