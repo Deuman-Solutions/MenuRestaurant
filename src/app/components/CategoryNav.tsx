@@ -67,11 +67,11 @@ export function CategoryNav({ categories, activeCategory, onSelect }: CategoryNa
       >
         <div
           className={cn(
-            "overflow-x-auto hide-scrollbar",
+            "w-full overflow-x-auto overscroll-x-contain touch-pan-x hide-scrollbar",
             isPinned && "max-w-5xl mx-auto px-4 md:px-6"
           )}
         >
-          <div className="flex items-center gap-6 h-16 whitespace-nowrap text-center text-[10px] font-bold text-muted-foreground uppercase">
+          <div className="flex flex-nowrap items-center gap-6 h-16 w-max whitespace-nowrap text-center text-[10px] font-bold text-muted-foreground uppercase">
             {categories.map((category) => {
               const Icon = category.icon
               const isActive = activeCategory === category.id

@@ -26,7 +26,7 @@ export function MenuItemModal({ item, onOpenChange }: MenuItemModalProps) {
     <Dialog open={item !== null} onOpenChange={onOpenChange}>
       {displayedItem && (
         <DialogContent className="gap-0 overflow-hidden p-0">
-          <div className="h-56 w-full bg-muted">
+          <div className="h-62 w-full bg-muted">
             <img
               src={displayedItem.image}
               alt={displayedItem.name}

@@ -37,7 +37,7 @@ function App() {
           className="bg-card rounded-3xl shadow-2xl overflow-hidden min-h-[600px]"
           data-purpose="menu-card"
         >
-          <section className="p-8 md:p-10 pb-4" data-purpose="search-section">
+          <section className="p-8 pb-2 md:p-10 md:pb-2" data-purpose="search-section">
             <SearchBar value={searchTerm} onChange={setSearchTerm} isSearching={isSearching} />
 
             {/* Stays in place below the search bar; pins itself to the top
@@ -49,7 +49,7 @@ function App() {
             />
           </section>
 
-          <section className="p-8 md:p-10 pt-0" data-purpose="menu-listing">
+          <section className="p-8 pt-0 md:p-10 md:pt-0" data-purpose="menu-listing">
             {isLoading && (
               <p className="text-sm text-muted-foreground text-center py-12">
                 Cargando el menú...

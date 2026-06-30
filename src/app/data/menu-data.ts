@@ -91,7 +91,7 @@ export const MENU_CATEGORIES: MenuCategory[] = [
         id: "cafe-helado",
         name: "CAFE HELADO",
         description:
-          "Café oscuro de carácter legendario, 3 bolas de helado de vainilla, leche, sabor caramelo, salsa de chocolate, suave chantilly y cacao en polvo...",
+          "Café oscuro de carácter legendario, 3 bolas de helado de vainilla, leche, sabor caramelo, salsa de chocolate, suave chantilly y cacao en polvo.",
         price: 6990,
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-rAP5U8ffx_6G-1Yz8qHJrsaH7PjyEygKa91mu9GH5nsrZ3Qck0FnhF6&s=10",
