@@ -29,7 +29,7 @@ export function MenuSection({ category, onSelectItem }: MenuSectionProps) {
           Próximamente nuevas opciones en esta categoría.
         </p>
       ) : category.highlighted ? (
-        <div className="bg-muted/40 border border-border rounded-lg p-4 shadow-sm">{grid}</div>
+        <div className="bg-muted/40 border border-border rounded-lg max-md:p-1 p-4 shadow-sm">{grid}</div>
       ) : (
         grid
       )}
